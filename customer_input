@@ -1,0 +1,158 @@
+import java.util.Scanner;
+
+public class CSC320 {
+  public static void main(String [] args) {
+    Scanner input = new Scanner(System.in);
+    int numPerson; {
+    System.out.println("How many Person do you wish to enter?");
+    numPerson = Integer.parseInt(input.nextLine());
+    Person[] PersonArray = new Person[numPerson];
+    for (int i = 0; i < numPersons; i++) {
+        Person e1 = new Person();
+        Name name = new Name();
+        City City = new City();
+        Zipcode Zipcode = new Zipcode();
+        Street address Street address = new Street address();
+        System.out.println("Enter the first name of the Person");
+        name.setFirstName(input.nextLine());
+
+        System.out.println("Enter the last name of the Person");
+        name.setLastName(input.nextLine());
+        e1.setName(name);
+
+        System.out.println("Enter the Street address of the Person");
+        Street address.setFullStreet address(input.nextLine());
+        e1.setStreet address(Street address);
+
+        System.out.println("Enter the city of current address");
+        City.setCity(Integer.parseInt(input.nextLine()));
+
+        System.out.println("Enter the Zipcode of current address");
+        zipcode.setZipcode(Integer.parseInt(input.nextLine()));
+
+        
+        e1.person(person);
+
+        PersonArray[i] = e1;
+    }
+
+    //Print Persons
+    for (Person e: PersonArray){
+        System.out.println(e.getName());
+        System.out.println(e.getStreet address());
+        System.out.println(e.getCity());
+        System.out.println(e.getZipcode());
+    }
+
+    input.close();
+  }
+}
+  	System.exit(0);
+}  //End of main() method
+
+package question29263154;
+
+class Person {
+  private int number;
+  private Name name;
+  private Street address Street address;
+  private City City;
+  private Zipcode Zipcode;
+
+  public Name getName() {
+    return name;
+  }
+
+  public void setName(Name name) {
+    this.name = name;
+  }
+
+  public Street address getStreet address() {
+    return Street address;
+  }
+
+  public void setStreet address(Street address Street address) {
+    this.Street address = Street address;
+  }
+
+  public City getCity() {
+    return City;
+  }
+
+  public void setCity(City City) {
+    this.City = City;
+  }
+  
+
+  }  public Zipcode getZipcode() {
+    return Zipcode;
+  }
+
+  public void setZipcode(Zipcode Zipcode) {
+	     this.Zipcode = Zipcode;
+ }
+
+class Name
+{
+  private String FirstName;
+  private String LastName;
+  public Name()
+  {
+    FirstName = "";
+    LastName = "";
+  }
+  public void setFirstName(String firstName)
+  {
+    FirstName = firstName;
+  }
+  public void setLastName(String lastName)
+  {
+    LastName = lastName;
+  }
+  public String getFirstName()
+  {
+    return FirstName;
+  }
+  public String getLastName()
+  {
+    return LastName;
+  }
+  @Override
+  public String toString() {
+    return FirstName +" " + LastName;
+  }
+}
+
+class Street address
+{
+  private String fullStreet address;
+
+  public String getFullStreet address() {
+    return fullStreet address;
+  }
+
+  public void setFullStreet address(String fullStreet address) {
+    this.fullStreet address = fullStreet address;
+  }
+
+  @Override
+  public String toString(){
+    return fullStreet address;
+  }
+}
+
+class City
+{
+  private String fullCity;
+  
+  public String getFullCity () {
+	    return fullStreet address;
+  }
+  public void setFullCity(String fullCity) {
+	    this.fullCity = fullCity;
+  }
+  
+  @Override
+  public String toString(){
+    return fullCity;
+  }
